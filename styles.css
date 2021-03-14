@@ -4,13 +4,21 @@
   --accent: #4e4d4d;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: "IBM Plex Mono", monospace;
+  width: 100%;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 .main {
-  padding: 2em 2em;
+  padding: 2em 2em 0;
 }
 
 .avatar__image {
@@ -43,7 +51,7 @@ a {
   }
 
   .main {
-    padding: 3em 5em;
+    padding: 3em 5em 0;
   }
 
   .title {
@@ -53,7 +61,7 @@ a {
 
 @media (min-width: 1024px) {
   .main {
-    padding: 4em 8em;
+    padding: 3em 8em 0;
   }
 
   .title {
